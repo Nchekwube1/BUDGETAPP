@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freestyle session</title>
+    <link rel="stylesheet" href="freestyle.css" />
+  </head>
+  <body>
+    <h2>Xiscos budget app</h2>
+    <div class="main">
+      <div class="input">
+        <div class="budgAlert"></div>
+        <div class="budget">
+          <form action="GET" class="budgForm">
+            <p>so whats your budget?</p>
+            <input type="text" id="budgInp" />
+            <input type="submit" value="submit" id="budgSub" />
+          </form>
+        </div>
+        <div class="expAlert"></div>
+        <div class="expense">
+          <form action="GET" class="expForm">
+            <p>what expense do you want to make</p>
+            <input type="text" id="expName" />
+            <p>how much does it cost?</p>
+            <input type="text" id="expCost" />
+            <input type="submit" value="submit" id="expSub" />
+          </form>
+        </div>
+      </div>
+      <div class="amount">
+        <div class="all">
+          <div class="bu">
+            <div class="name">Budget</div>
+            <div class="icon"><img src="icons/user-svgrepo-com.svg" /></div>
+            <div>$ <span class="budVal">0</span></div>
+          </div>
+          <div class="ex">
+            <div class="name">expenses</div>
+            <div class="icon">
+              <img src="icons/list-svgrepo-com.svg" />
+            </div>
+            <div>$<span class="expVal">0</span></div>
+          </div>
+          <div class="ba">
+            <div class="name">balance</div>
+            <div class="icon">
+              <img src="icons/money-dollars-svgrepo-com.svg" />
+            </div>
+            <div>$<span class="balVal">0</span></div>
+          </div>
+        </div>
+
+        <div class="expList">
+          <div class="listI">
+            <div>expense</div>
+            <div>price</div>
+          </div>
+
+          <!-- <div class="single">
+            <div class="expName">fix car</div>
+            <div class="expAmt"><span>$</span> 400</div>
+            <div class="edit">
+              <button id="edit">edit</button>
+              <button id="delete">delete</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="freestyle.js"></script>
+  </body>
+</html>
